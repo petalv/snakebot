@@ -61,7 +61,7 @@ make one move per game tick, so no *bullet time* or any other Matrix tricks budd
 ### Lesson 2: The only fence against the world is a thorough knowledge of it
 
 To be able to execute good moves you really need to understand the world your snake lives and grows in.    
-Yes your goal is to survive and eat, if you did'nt know this already.  
+Yes your goal is to survive and eat, if you didn't know this already.  
 The *mapState* as mentioned above contains everything you really need to know. The *mapState::gameMap()*  
 method  will give you access to all the game tiles, *::getTiles()*, and all the snake positions, *::getSnakeInfos()*.  
 You are a God indeed. Use this data to gain a good view of the...snakepit or whatever you wish to call  
@@ -73,7 +73,9 @@ You know how to move the snake and you know the layout of the world. It's now ti
 to form a puny brain or...a sentient life form. It's all up to you. Now, if you have forgotten all those classes     
 in artifical intelligence and discrete mathematics from uni there is still some hope for you. Enter the *::MapUtils*    
 (see domain/mapUtils.js). This little helper contains some crufty functions for calculating routes and distances.   
-Use it, or not...you sturdy computer science genious you...ggrrrrr. Uhm, well. 
+Use it, or not...you sturdy computer science genious you...ggrrrrr. Uhm, well.  
+
+Oh and by the way, you need to issue your move before the next game tick. Otherwise your snake will just keep going in the same direction as it did the last tick. Hmm that reminds me of a song; 'Right, right goes your snake, gently down the grid, merrily merrily, merrily, merrily until it KA-SCHMACK HITS THE WALL'. It's such a sad song.
 
 ## Analysing the game 
  
